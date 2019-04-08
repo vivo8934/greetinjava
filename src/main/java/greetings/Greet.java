@@ -1,18 +1,15 @@
 package greetings;
 import java.util.Scanner;
-import java.util.HashMap;
+
 
 public class Greet{
 
     public static int Counter = 0;
-    public String name;
-    public String language;
-
-    HashMap<String, Integer> allGreetings = new HashMap<String, Integer>();
 
     public static void main(String[]args){
 
 
+        Greeter greeter = new Greeter();
         Scanner greeting =  new Scanner(System.in);
 
         String command;
@@ -24,7 +21,13 @@ public class Greet{
 
             String[] comm = command.split(" ");
 
-
+            if(comm[0].equalsIgnoreCase("greet")){
+                String msg = greeter.greeting(comm[1], comm[2]);
+                System.out.println(msg);
+            }
+            else {
+                System.out.println("Invalid command!");
+            }
 
         }
 
