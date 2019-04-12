@@ -12,8 +12,13 @@ public class Greeter {
         } else {
             allGreetings.put(name, 1);
         }
-        name = name.substring(0,1).toUpperCase() +  name.substring(1).toLowerCase();
-        return Languages.valueOf(language).getGreets() + " " + name;
+        try {
+            name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
+            return Languages.valueOf(language).getGreets() + " " + name;
+        }catch (NullPointerException e) {
+            name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
+            return Languages.valueOf("English").getGreets() + " " + name;
+        }
     }
 
     public String greeted(String name){
@@ -33,13 +38,15 @@ public class Greeter {
     }
 
     public void clearAllGreetings(){
+        System.out.println("============ The Greetings have been cleared================");
         allGreetings.clear();
+        allGreetings.size();
     }
 
     public void clearUser(String name){
+        System.out.println("=========== " + name  + " Has been removed from greetings ========== \n");
        allGreetings.remove(name);
     }
 
-
-
+    public int count(){ return allGreetings.size(); }
 }
