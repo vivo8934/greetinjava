@@ -42,7 +42,7 @@ public class Greet{
                     name = comm[1];
                 }
 
-                    String msg = (String) greeter.greeted(name);
+                    String msg = greeter.greeted(name);
                     System.out.println(msg);
 
             }
