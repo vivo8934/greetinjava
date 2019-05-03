@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e10be892-bfd3-493d-ae45-5c4a22763794" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/greetings/Greetings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/greetings/Jdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,11 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -232,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Greet">
+  <component name="RunManager" selected="JUnit.JdbcTest">
     <configuration name="Greet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="greetings.Greet" />
       <module name="greet-in-java" />
@@ -246,7 +240,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GreeterTest.shouldGreet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
         <pattern>
@@ -255,8 +249,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="greetings" />
-      <option name="MAIN_CLASS_NAME" value="greetings.GreeterTest" />
-      <option name="METHOD_NAME" value="shouldGreet" />
+      <option name="MAIN_CLASS_NAME" value="greetings.JdbcTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTest.ConnectingToDb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greetings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="greetings" />
+      <option name="MAIN_CLASS_NAME" value="greetings.JdbcTest" />
+      <option name="METHOD_NAME" value="ConnectingToDb" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTest.LoadingDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greetings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="greetings" />
+      <option name="MAIN_CLASS_NAME" value="greetings.JdbcTest" />
+      <option name="METHOD_NAME" value="LoadingDriver" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greetings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="greetings" />
+      <option name="MAIN_CLASS_NAME" value="greetings.JdbcTest" />
+      <option name="METHOD_NAME" value="getConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -264,8 +305,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcTest" />
+        <item itemvalue="JUnit.JdbcTest.ConnectingToDb" />
+        <item itemvalue="JUnit.JdbcTest.LoadingDriver" />
+        <item itemvalue="JUnit.JdbcTest.getConnection" />
         <item itemvalue="Application.Greet" />
-        <item itemvalue="JUnit.GreeterTest.shouldGreet" />
       </list>
     </recent_temporary>
   </component>
@@ -286,9 +330,18 @@
     <history-entry file="GreeterTest_shouldGreet - 2019.05.02 at 09h 01m 22s.xml">
       <configuration name="GreeterTest.shouldGreet" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JdbcTest_getConnection - 2019.05.03 at 15h 37m 50s.xml">
+      <configuration name="JdbcTest.getConnection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTest_LoadingDriver - 2019.05.03 at 15h 40m 48s.xml">
+      <configuration name="JdbcTest.LoadingDriver" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcTest_ConnectingToDb - 2019.05.03 at 15h 48m 19s.xml">
+      <configuration name="JdbcTest.ConnectingToDb" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="7" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -296,18 +349,18 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25378788" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25378788" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="7" />
       <window_info id="Project Explorer" order="8" />
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32884902" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.22272047" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.22272047" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -323,6 +376,20 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java</url>
+          <line>29</line>
+          <properties class="greetings.JdbcTest" method="LoadingDriver">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/greetinjava.iml">
@@ -399,11 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
