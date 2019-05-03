@@ -51,7 +51,7 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.4</version>
                 <configuration>
-                    <url>jdbc:h2:./target/greet-in-java</url>
+                    <url>jdbc:h2:./target/greetings-console</url>
                     <user>sa</user>
                 </configuration>
                 <dependencies>
