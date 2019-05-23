@@ -13,6 +13,7 @@ public class Greet{
 
 
         Greeter greeter = new Greeter();
+        Jdbc jdbc  = new Jdbc();
         Scanner greeting =  new Scanner(System.in);
 
         String command;
