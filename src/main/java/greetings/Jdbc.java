@@ -103,16 +103,17 @@ public class Jdbc implements Greetings {
 
     @Override
     public String greeted()  {
+        HashMap<String, Integer> allGreetings = new HashMap<String, Integer>();
         try {
             ResultSet rs = psListNames.executeQuery();
             while(rs.next()) {
-                System.out.printf("Name: %s Count: %s ", rs.getString("name"), rs.getInt("timesGreeted"));
-                System.out.println();
+                allGreetings.put(rs.getString("name"), rs.getInt("timesGreeted"));
+
             }
         } catch (SQLException e) {
             System.out.println("Error: " + e);
         }
-        return null;
+        return allGreetings.toString();
     }
 
 

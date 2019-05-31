@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 
@@ -49,5 +50,53 @@ public class JdbcTest {
         }
     }
 
+  @Test
+    public void DisplayGreetedNames(){
+        Jdbc jdbc = new Jdbc();
+
+      jdbc.greeting("Manda", "Mandarin");
+      jdbc.greeting("Vito", "IsiXhosa");
+      jdbc.clearAllGreetings();
+
+        assertEquals("{}", jdbc.greeted());
+  }
+
+  @Test
+    public void shouldClearUser(){
+        Jdbc jdbc = new Jdbc();
+
+        jdbc.greeting("Manda", "Mandarin");
+        jdbc.greeting("Vito", "IsiXhosa");
+        jdbc.greeting("Vincent", "English");
+
+        assertEquals(3, jdbc.count());
+        jdbc.clearUser("Vito");
+        assertEquals(2, jdbc.count());
+
+  }
+  @Test
+    public void shouldClearAll(){
+        Jdbc jdbc = new Jdbc();
+
+      jdbc.greeting("Manda", "Mandarin");
+      jdbc.greeting("Vito", "IsiXhosa");
+      jdbc.greeting("Vincent", "English");
+
+      assertEquals(3, jdbc.count());
+      jdbc.clearAllGreetings();
+      assertEquals(0, jdbc.count());
+  }
+
+@Test
+    public void shouldCounter(){
+
+        Jdbc jdbc = new Jdbc();
+
+    jdbc.greeting("Manda", "Mandarin");
+    jdbc.greeting("Vito", "IsiXhosa");
+    jdbc.greeting("Vincent", "English");
+
+    assertEquals(3, jdbc.count());
+}
 
 }

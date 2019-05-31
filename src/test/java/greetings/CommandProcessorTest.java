@@ -16,4 +16,17 @@ public class CommandProcessorTest {
 
         assertEquals(commandprocessor.proccessingCommands(commandextractor), "Hello Mfundo");
     }
+
+    @Test
+    void getCommandGreeted() throws SQLException {
+
+
+        CommandExtractor commandextractor  = new CommandExtractor("greeted");
+        CommandProcessor commandprocessor = new CommandProcessor(new Jdbc());
+        CommandProcessor commandProcessor1 = new CommandProcessor(new Jdbc());
+        commandProcessor1.proccessingCommands(new CommandExtractor("clear"));
+
+        assertEquals("{}", commandprocessor.proccessingCommands(commandextractor));
+
+    }
 }
