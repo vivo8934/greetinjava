@@ -1,6 +1,7 @@
 package greetings;
 
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
@@ -18,6 +19,11 @@ public class JdbcTest {
 
     final String DATABASE_URL = "jdbc:h2:./target/greetings-console";
 
+    @BeforeEach
+    void setUp(){
+        Jdbc db = new Jdbc();
+        db.clearAllGreetings();
+    }
 
 
     public Connection getConnection() throws Exception {
