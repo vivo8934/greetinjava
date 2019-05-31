@@ -18,7 +18,7 @@ public class CommandExtractor {
         }
 
         if(comm.length >= 3){
-            this.language = comm[2].substring(0, 1).toUpperCase() + comm[2].substring(1).toLowerCase();
+            this.language = comm[2];
         }else{
             this.language = "English";
         }

@@ -73,7 +73,14 @@ public class Jdbc implements Greetings {
     @Override
     public String greeting(String name, String language)
     {
-        return null;
+        addUser(name);
+        try {
+            name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
+            return Languages.valueOf(language).getGreets() + " " + name;
+        }catch (NullPointerException e) {
+            name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
+            return Languages.valueOf("English").getGreets() + " " + name;
+        }
     }
 
     @Override
@@ -85,13 +92,13 @@ public class Jdbc implements Greetings {
             ResultSet rs = psCounter.executeQuery();
             if (rs.next()){
                 allGreetings.put(rs.getString("name"), rs.getInt("timesGreeted"));
-                System.out.printf("Count %s ",rs.getInt("timesGreeted"));
-                System.out.println();
+               return String.format("Count %s ",rs.getInt("timesGreeted"));
+//                System.out.println();
             }
+            return "0";
         } catch (SQLException e){
-            System.out.println("Error: " + e);
+            return "0";
         }
-        return null;
     }
 
     @Override
