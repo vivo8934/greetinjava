@@ -1,8 +1,9 @@
 package greetings;
+import java.sql.SQLException;
 import java.util.HashMap;
 
 
-public class Greeter {
+public class Greeter implements Greetings {
 
     HashMap<String, Integer> allGreetings = new HashMap<String, Integer>();
 
@@ -20,7 +21,6 @@ public class Greeter {
             return Languages.valueOf("English").getGreets() + " " + name;
         }
     }
-
     public String greeted(String name){
         try {
             if (name.isEmpty()){
@@ -38,6 +38,12 @@ public class Greeter {
             return allGreetings.toString();
         }
     }
+
+    @Override
+    public String greeted() throws SQLException {
+        return allGreetings.toString();
+    }
+
 
     public void clearAllGreetings(){
         System.out.println("============ The Greetings have been cleared================");

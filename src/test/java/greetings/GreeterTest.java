@@ -27,7 +27,7 @@ class GreeterTest {
          greeter.greeting("siphokazi", "Mandarin");
 
          assertEquals(greeter.greeted("siphokazi"), "2");
-         System.out.println(greeter.greeted("siphokazi"));
+
      }
 
      @Test
@@ -45,7 +45,7 @@ class GreeterTest {
          allGreetings.put("yash", 1);
 
          assertEquals(greeter.greeted(null), allGreetings.toString());
-         System.out.println(allGreetings.toString());
+
     }
     @Test
     void shouldCounter(){
@@ -68,7 +68,7 @@ class GreeterTest {
          assertEquals(2, greeter.count());
          greeter.clearAllGreetings();
         assertEquals(0, greeter.count());
-         System.out.println(greeter.count());
+
      }
      @Test
      void shouldClearUser(){
@@ -80,11 +80,7 @@ class GreeterTest {
 
 
         assertEquals(greeter.count(), 4);
-         System.out.println(greeter.greeted(null));
-         System.out.println(greeter.count());
         greeter.clearUser("vivo");
-         System.out.println(greeter.greeted(null));
         assertEquals(greeter.count(), 3);
-         System.out.println(greeter.count());
      }
 }

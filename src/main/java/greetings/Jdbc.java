@@ -146,7 +146,7 @@ public class Jdbc implements Greetings {
 
             while (rs.next()){
                 allGreetings.put(rs.getString("name"), rs.getInt("timesGreeted"));
-//                System.out.println(allGreetings);
+
             }
 
 

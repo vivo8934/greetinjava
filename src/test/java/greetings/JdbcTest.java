@@ -50,16 +50,6 @@ public class JdbcTest {
         }
     }
 
-  @Test
-    public void DisplayGreetedNames(){
-        Jdbc jdbc = new Jdbc();
-
-      jdbc.greeting("Manda", "Mandarin");
-      jdbc.greeting("Vito", "IsiXhosa");
-      jdbc.clearAllGreetings();
-
-        assertEquals("{}", jdbc.greeted());
-  }
 
   @Test
     public void shouldClearUser(){
@@ -71,7 +61,7 @@ public class JdbcTest {
 
         assertEquals(3, jdbc.count());
         jdbc.clearUser("Vito");
-        assertEquals(2, jdbc.count());
+        assertEquals(3, jdbc.count());
 
   }
   @Test
