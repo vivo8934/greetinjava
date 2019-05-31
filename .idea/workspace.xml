@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e10be892-bfd3-493d-ae45-5c4a22763794" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greetings/Greeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greetings/Greeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greetings/Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greetings/Jdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/greetings/GreeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greetings/GreeterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -61,20 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+            <state relative-caret-position="222">
+              <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/greetings/GreeterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="863">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/main/java/greetings/Greeter.java" />
         <option value="$PROJECT_DIR$/src/main/java/greetings/Greet.java" />
         <option value="$PROJECT_DIR$/src/main/java/greetings/Jdbc.java" />
-        <option value="$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java" />
       </list>
     </option>
   </component>
@@ -296,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcTest.shouldClearUser">
+  <component name="RunManager" selected="JUnit.JdbcTest">
     <configuration name="CommandExtractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
@@ -357,7 +352,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTest.shouldClearUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcTest.shouldClearAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
         <pattern>
@@ -367,7 +362,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="greetings" />
       <option name="MAIN_CLASS_NAME" value="greetings.JdbcTest" />
-      <option name="METHOD_NAME" value="shouldClearUser" />
+      <option name="METHOD_NAME" value="shouldClearAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -375,11 +370,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JdbcTest.shouldClearUser" />
         <item itemvalue="JUnit.JdbcTest" />
         <item itemvalue="JUnit.GreeterTest" />
         <item itemvalue="JUnit.CommandProcessorTest" />
         <item itemvalue="JUnit.CommandExtractorTest" />
+        <item itemvalue="JUnit.JdbcTest.shouldClearAll" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +424,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="7" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -442,13 +437,13 @@
       <window_info id="DB Browser" order="7" />
       <window_info id="Project Explorer" order="8" />
       <window_info id="Job Explorer" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.31390134" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.31390134" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32884902" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32884902" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3437967" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3437967" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -612,13 +607,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/greetings/CommandExtractorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/greetings/GreeterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="863">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -632,10 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/greetings/GreeterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/greetings/CommandExtractorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -644,18 +646,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/greetings/JdbcTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        <state relative-caret-position="222">
+          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

@@ -61,7 +61,7 @@ public class JdbcTest {
 
         assertEquals(3, jdbc.count());
         jdbc.clearUser("Vito");
-        assertEquals(3, jdbc.count());
+        assertEquals(2, jdbc.count());
 
   }
   @Test
